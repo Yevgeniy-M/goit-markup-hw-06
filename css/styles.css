@@ -659,6 +659,77 @@ img {
   padding: 40px;
 }
 
+.form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  /*font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;*/
+  width: 448px;
+  height: 40px;
+  margin: 0px;
+  padding: 12px 42px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-23px, -37px);
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.form-input:focus ~ .form-svg {
+  fill: var(--accent-color);
+}
+
+.form-svg {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  fill: var(--title-light-theme-color);
+}
+
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+  outline: 0;
+}
+
+.backdrop-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 /* страничка портфолио */
 
 .navigation-list-item {
